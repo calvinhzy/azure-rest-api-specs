@@ -1153,8 +1153,8 @@
         "tags": [
           "reports"
         ],
-        "operationId": "reports_Get",
-        "description": "Get information about a report associated with a configuration profile assignment run",
+        "operationId": "VMreports_Get",
+        "description": "Get information about a VM report associated with a configuration profile assignment run",
         "x-ms-examples": {
           "Get a report for a configuration profile assignment": {
             "$ref": "./examples/getReport.json"
@@ -1215,8 +1215,8 @@
         "tags": [
           "reports"
         ],
-        "operationId": "reports_ListByConfigurationProfileAssignments",
-        "description": "Retrieve a list of reports within a given configuration profile assignment",
+        "operationId": "VMreports_ListByConfigurationProfileAssignments",
+        "description": "Retrieve a list of VM reports within a given configuration profile assignment",
         "x-ms-examples": {
           "List reports by configuration profiles assignment": {
             "$ref": "./examples/listReportsByconfigurationProfileAssignment.json"
@@ -1590,7 +1590,7 @@
           "HCRPReports"
         ],
         "operationId": "HCRPReports_Get",
-        "description": "Get information about a report associated with a configuration profile assignment run",
+        "description": "Get information about a ARC report associated with a configuration profile assignment run",
         "x-ms-examples": {
           "Get a report for a HCRP configuration profile assignment": {
             "$ref": "./examples/getHCRPReport.json"
@@ -1652,7 +1652,7 @@
           "HCRPReports"
         ],
         "operationId": "HCRPReports_ListByConfigurationProfileAssignments",
-        "description": "Retrieve a list of reports within a given configuration profile assignment",
+        "description": "Retrieve a list of ARC reports within a given configuration profile assignment",
         "x-ms-examples": {
           "List reports by HCRP configuration profiles assignment": {
             "$ref": "./examples/listReportsByconfigurationProfileHCRPAssignment.json"
@@ -1939,7 +1939,7 @@
           "HCIReports"
         ],
         "operationId": "HCIReports_Get",
-        "description": "Get information about a report associated with a configuration profile assignment run",
+        "description": "Get information about a HCI report associated with a configuration profile assignment run",
         "x-ms-examples": {
           "Get a report for a HCI configuration profile assignment": {
             "$ref": "./examples/getHCIReport.json"
@@ -2001,7 +2001,7 @@
           "HCIReports"
         ],
         "operationId": "HCIReports_ListByConfigurationProfileAssignments",
-        "description": "Retrieve a list of reports within a given configuration profile assignment",
+        "description": "Retrieve a list of HCI reports within a given configuration profile assignment",
         "x-ms-examples": {
           "List reports by HCI configuration profiles assignment": {
             "$ref": "./examples/listReportsByconfigurationProfileHCIAssignment.json"
@@ -2148,8 +2148,9 @@
       "description": "The custom configuration for configuration profile. Name and value pairs that define the configuration details of the configuration profile.",
       "type": "object",
       "example": {
-        "Antimalware/Enable": true
-      }
+        "Antimalware/Enable": "true"
+      },
+      "additionalProperties": {}
     },
     "ConfigurationProfileUpdate": {
       "description": "Definition of the configuration profile.",
