@@ -1418,7 +1418,8 @@
           "format": "int64",
           "x-ms-mutability": [
             "read",
-            "create"
+            "create",
+            "update"
           ]
         },
         "extendedCapacitySizeTiB": {
@@ -1427,7 +1428,8 @@
           "format": "int64",
           "x-ms-mutability": [
             "read",
-            "create"
+            "create",
+            "update"
           ]
         },
         "totalVolumeSizeGiB": {
@@ -1762,7 +1764,8 @@
           "description": "A collection of rules governing the accessibility from specific network locations.",
           "x-ms-mutability": [
             "create",
-            "read"
+            "read",
+            "update"
           ]
         },
         "privateEndpointConnections": {
