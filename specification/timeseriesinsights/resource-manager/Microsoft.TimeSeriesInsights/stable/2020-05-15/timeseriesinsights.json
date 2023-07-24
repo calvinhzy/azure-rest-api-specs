@@ -126,9 +126,6 @@
               "$ref": "#/definitions/EnvironmentResource"
             }
           },
-          "404": {
-            "description": "The subscription or resource group could not be found."
-          },
           "default": {
             "description": "HTTP 400 (Bad Request): The given environment request body is invalid; See the error code and message in the response for details.",
             "schema": {
