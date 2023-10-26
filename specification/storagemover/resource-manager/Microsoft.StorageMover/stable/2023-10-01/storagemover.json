@@ -2149,7 +2149,8 @@
           "$ref": "#/definitions/CredentialType",
           "x-ms-mutability": [
             "read",
-            "create"
+            "create",
+            "update"
           ]
         }
       },
